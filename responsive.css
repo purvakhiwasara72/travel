@@ -1,0 +1,42 @@
+.test-row, .about-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.about-row{
+    align-items: center;
+}
+
+.facts-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    column-gap: 4rem;
+    
+}
+.gallery-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+}
+.gallery-item{
+    margin: 0;
+}
+@media screen and (min-width: 1200px){
+    .test-row, .gallery-row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .popular-row{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
+}
+    
+.popular-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    
+}
